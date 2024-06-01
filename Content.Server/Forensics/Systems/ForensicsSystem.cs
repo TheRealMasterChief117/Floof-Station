@@ -3,6 +3,7 @@ using Content.Server.DoAfter;
 using Content.Server.Fluids.EntitySystems;
 using Content.Server.Forensics.Components;
 using Content.Server.Popups;
+using Content.Shared.Popups;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.DoAfter;
 using Content.Shared.Forensics;
@@ -12,6 +13,7 @@ using Content.Shared.Inventory;
 using Content.Shared.Weapons.Melee.Events;
 using Robust.Shared.Random;
 using Content.Shared.Inventory.Events;
+using Content.Shared.Verbs;
 
 namespace Content.Server.Forensics
 {
@@ -36,6 +38,8 @@ namespace Content.Server.Forensics
             SubscribeLocalEvent<CleansForensicsComponent, AfterInteractEvent>(OnAfterInteract, after: new[] { typeof(AbsorbentSystem) });
             SubscribeLocalEvent<ForensicsComponent, CleanForensicsDoAfterEvent>(OnCleanForensicsDoAfter);
             SubscribeLocalEvent<DnaComponent, TransferDnaEvent>(OnTransferDnaEvent);
+            SubscribeLocalEvent<CleansForensicsComponent, GetVerbsEvent<UtilityVerb>>(OnUtilityVerb);
+
         }
 
         private void OnInteract(EntityUid uid, FingerprintComponent component, ContactInteractionEvent args)
@@ -130,7 +134,7 @@ namespace Content.Server.Forensics
             Dirty(target, dest);
         }
 
-        private void OnAfterInteract(EntityUid uid, CleansForensicsComponent component, AfterInteractEvent args)
+        private void OnAfterInteract(Entity<CleansForensicsComponent> cleanForensicsEntity, ref AfterInteractEvent args)
         {
             if (args.Handled || !args.CanReach || !TryComp<ForensicsComponent>(args.Target, out var forensicsComp))
                 return;
