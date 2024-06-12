@@ -14,6 +14,7 @@ using Content.Shared.Weapons.Melee.Events;
 using Robust.Shared.Random;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Verbs;
+using Robust.Shared.Utility;
 
 namespace Content.Server.Forensics
 {
@@ -150,12 +151,12 @@ namespace Content.Server.Forensics
 
             var doAfterArgs = new DoAfterArgs(EntityManager, args.User, cleanDelay, new CleanForensicsDoAfterEvent(), uid, target: args.Target, used: args.Used)
             {
-                BreakOnHandChange = true,
-                NeedHand = true,
-                BreakOnDamage = true,
-                BreakOnMove = true,
-                MovementThreshold = 0.01f,
-                DistanceThreshold = forensicsComp.CleanDistance,
+                Act = () => TryStartCleaning(entity, user, target),
+                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/bubbles.svg.192dpi.png")),
+                Text = Loc.GetString(Loc.GetString("forensics-verb-text")),
+                Message = Loc.GetString(Loc.GetString("forensics-verb-message")),
+                // This is important because if its true using the cleaning device will count as touching the object.
+                DoContactInteraction = false
             };
 
             _doAfterSystem.TryStartDoAfter(doAfterArgs);
