@@ -127,7 +127,7 @@ public sealed class LoadoutSystem : EntitySystem
         try { // Floofstation
         #endif
         // Pick the heirloom
-        heirlooms.RemoveWhere(it => !Exists(it.Item1)) // Floofstation - exclude invalid heirlooms
+        heirlooms.RemoveWhere(it => !Exists(it.Item1)); // Floofstation - exclude invalid heirlooms
         if (heirlooms.Any())
         {
             var heirloom = _random.Pick(heirlooms);
