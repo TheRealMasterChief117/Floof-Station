@@ -93,7 +93,7 @@ public sealed class LoadoutSystem : EntitySystem
         {
             if (!Exists(loadout.Item1))
                 continue; // Floofstation - skip failed loadouts. This used to cause roundstart loop.
-            
+
             var loadoutProto = _protoMan.Index<LoadoutPrototype>(loadout.Item2.LoadoutName);
             if (loadoutProto.CustomName && loadout.Item2.CustomName != null)
                 _meta.SetEntityName(loadout.Item1, loadout.Item2.CustomName);
@@ -127,7 +127,7 @@ public sealed class LoadoutSystem : EntitySystem
         try { // Floofstation
         #endif
         // Pick the heirloom
-        heirlooms.RemoveWhere(it => !Exists(it.Item1)); // Floofstation - exclude invalid heirlooms
+        heirlooms.RemoveAll(it => !Exists(it.Item1)); // Floofstation - exclude invalid heirlooms
         if (heirlooms.Any())
         {
             var heirloom = _random.Pick(heirlooms);
@@ -139,8 +139,7 @@ public sealed class LoadoutSystem : EntitySystem
             Dirty(heirloom.Item1, comp);
         }
         #if EXCEPTION_TOLERANCE
-        catch (Exception e) // Also floofstation
-        {
+        } catch (Exception e) { // Also floofstation
             Log.Error("Caught exception while applying heirloom.", e);
         }
         #endif
