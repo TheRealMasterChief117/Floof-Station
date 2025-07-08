@@ -122,7 +122,12 @@ public sealed class LoadoutSystem : EntitySystem
         }
         #endif
 
+
+        #if EXCEPTION_TOLERANCE
+        try { // Floofstation
+        #endif
         // Pick the heirloom
+        heirlooms.RemoveWhere(it => !Exists(it.Item1)) // Floofstation - exclude invalid heirlooms
         if (heirlooms.Any())
         {
             var heirloom = _random.Pick(heirlooms);
@@ -133,5 +138,11 @@ public sealed class LoadoutSystem : EntitySystem
             Dirty(uid, haver);
             Dirty(heirloom.Item1, comp);
         }
+        #if EXCEPTION_TOLERANCE
+        catch (Exception e) // Also floofstation
+        {
+            Log.Error("Caught exception while applying heirloom.", e);
+        }
+        #endif
     }
 }
