@@ -992,7 +992,7 @@ public sealed partial class ChatSystem : SharedChatSystem
 
         _sanitizer.TrySanitizeOutSmilies(newMessage, source, out newMessage, out emoteStr);
 
-        return newMessage;
+        return FormattedMessage.EscapeText(newMessage); // Floofstation - where did this sanitization go?
     }
 
     private string SanitizeInGameOOCMessage(string message)
