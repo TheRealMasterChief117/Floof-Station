@@ -51,13 +51,6 @@
   whitelist:
     components:
     - Vocal
-  blacklist:
-    tags:
-      - DionaEmotes # Floof - M3739 - #631
-      - UnathiEmotes
-      - ArachnidEmotes # Floof - M3739 - #631
-      - MothEmotes # Floof - M3739 - #631
-      - ChitinidEmotes # Floof - M3739 - #726
   chatMessages: ["chat-emote-msg-sigh"]
   chatTriggers:
     - sighs
