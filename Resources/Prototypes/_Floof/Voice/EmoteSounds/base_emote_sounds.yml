@@ -40,8 +40,6 @@
       collection: MaleSigh
     Crying:
       collection: MaleCry
-    Gasp:
-      collection: MaleGasp
     DefaultDeathgasp:
       collection: MaleDeathGasp
 
@@ -60,7 +58,5 @@
       collection: FemaleSigh
     Crying:
       collection: FemaleCry
-    Gasp:
-      collection: FemaleGasp
     DefaultDeathgasp:
       collection: FemaleDeathGasp
