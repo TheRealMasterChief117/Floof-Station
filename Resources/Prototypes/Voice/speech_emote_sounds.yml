@@ -518,8 +518,8 @@
       # collection: Hew | Floof - Not implemented yet
     Honk:
       collection: BikeHorn
-    Gasp:
-      collection: MaleGasp
+    # Gasp:
+      # collection: MaleGasp | Floof - Not implemented yet
     DefaultDeathgasp:
       collection: MothDeathGasp
 
