@@ -1,7 +1,6 @@
 - type: emoteSounds
   id: FloofUnisexHarpy
   sounds:
-  Scream:
     Scream:
       collection: HarpyScreams
     Laugh:
