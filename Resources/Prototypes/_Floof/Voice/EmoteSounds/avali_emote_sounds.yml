@@ -1,0 +1,22 @@
+- type: soundCollection
+  id: AvaliScreams
+  files:
+    - /Audio/_Floof/Voice/Avali/avali_scream.ogg
+
+- type: emoteSounds
+  id: UnisexAvali
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: AvaliScreams
+    Chirp:
+      collection: ResomiChirps
+
+- type: emoteSounds
+  parent: [FloofBaseMaleSounds, UnisexAvali]
+  id: MaleAvali
+
+- type: emoteSounds
+  parent: [FloofBaseFemaleSounds, UnisexAvali]
+  id: FemaleAvali

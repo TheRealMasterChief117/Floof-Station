@@ -1,0 +1,23 @@
+- type: emoteSounds
+  id: FloofUnisexFelinid
+  sounds:
+    Scream:
+      collection: FelinidScreams
+    Hiss:
+      collection: FelinidHisses
+    Meow:
+      collection: FelinidMeows
+    Mew:
+      collection: FelinidMews
+    Growl:
+      collection: FelinidGrowls
+    Purr:
+      collection: FelinidPurrs
+
+- type: emoteSounds
+  parent: [FloofBaseMaleSounds, FloofUnisexFelinid]
+  id: FloofMaleFelinid
+
+- type: emoteSounds
+  parent: [FloofBaseFemaleSounds, FloofUnisexFelinid]
+  id: FloofFemaleFelinid

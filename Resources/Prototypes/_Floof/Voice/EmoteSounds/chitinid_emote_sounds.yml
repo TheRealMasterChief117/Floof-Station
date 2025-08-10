@@ -1,0 +1,7 @@
+- type: emoteSounds
+  parent: [FloofBaseMaleSounds, UnisexChitinid]
+  id: FloofMaleChitinid
+
+- type: emoteSounds
+  parent: [FloofBaseFemaleSounds, UnisexChitinid]
+  id: FloofFemaleChitind

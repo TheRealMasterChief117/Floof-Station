@@ -1,0 +1,19 @@
+- type: emoteSounds
+  id: FloofUnisexReptilian
+  sounds:
+    Scream:
+      path: /Audio/Voice/Reptilian/reptilian_scream.ogg
+    Laugh:
+      path: /Audio/Animals/lizard_happy.ogg
+    Yip:
+      collection: Yip
+    Hiss:
+      collection: ReptilianHiss
+
+- type: emoteSounds
+  parent: [FloofBaseMaleSounds, FloofUnisexReptilian]
+  id: FloofMaleReptilian
+
+- type: emoteSounds
+  parent: [FloofBaseFemaleSounds, FloofUnisexReptilian]
+  id: FloofFemaleReptilian

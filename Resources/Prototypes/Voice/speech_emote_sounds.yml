@@ -88,12 +88,6 @@
       collection: MaleCry
     Weh:
       collection: Weh
-    # Floof
-    Yip:
-      collection: Yip
-    Hiss:
-      collection: ReptilianHiss
-    # Floof end
     Sneeze:
       collection: MaleSneezes
     Cough:
@@ -112,7 +106,7 @@
       collection: Snores
     Sigh:
       collection: MaleSigh
-    #TODO - M3739 - Give Unathi a sneeze.
+
 - type: emoteSounds
   id: FemaleReptilian
   params:
@@ -130,12 +124,6 @@
       collection: FemaleCry
     Weh:
       collection: Weh
-    # Floof
-    Yip:
-      collection: Yip
-    Hiss:
-      collection: ReptilianHiss
-    # Floof end
     Sneeze:
       collection: FemaleSneezes
     Cough:

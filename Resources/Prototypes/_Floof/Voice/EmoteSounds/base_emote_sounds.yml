@@ -1,0 +1,66 @@
+- type: emoteSounds
+  id: FloofBaseHumanoidSounds
+  abstract: true
+  params:
+    variation: 0.125
+  sounds:
+    Snore:
+      collection: Snores
+    Whistle:
+      collection: Whistles
+    CatMeow:
+      collection: CatMeows
+    CatHisses:
+      collection: CatHisses
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    RobotBeep:
+      collection: RobotBeeps
+    Honk:
+      collection: BikeHorn
+    Sigh:
+      collection: MaleSigh
+    Crying:
+      collection: MaleCry
+    Weh:
+      collection: Weh
+
+- type: emoteSounds
+  parent: FloofBaseHumanoidSounds
+  id: FloofBaseMaleSounds
+  abstract: true
+  sounds:
+    Sneeze:
+      collection: MaleSneezes
+    Cough:
+      collection: MaleCoughs
+    Yawn:
+      collection: MaleYawn
+    Sigh:
+      collection: MaleSigh
+    Crying:
+      collection: MaleCry
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: MaleDeathGasp
+
+- type: emoteSounds
+  parent: FloofBaseHumanoidSounds
+  id: FloofBaseFemaleSounds
+  abstract: true
+  sounds:
+    Sneeze:
+      collection: FemaleSneezes
+    Cough:
+      collection: FemaleCoughs
+    Yawn:
+      collection: FemaleYawn
+    Sigh:
+      collection: FemaleSigh
+    Crying:
+      collection: FemaleCry
+    Gasp:
+      collection: FemaleGasp
+    DefaultDeathgasp:
+      collection: FemaleDeathGasp

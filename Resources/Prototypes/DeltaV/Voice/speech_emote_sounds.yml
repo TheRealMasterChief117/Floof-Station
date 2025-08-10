@@ -80,8 +80,6 @@
       collection: Wurble
     Gnash:
       collection: FeroxiGnashes
-    Coo: #Floof
-      collection: HarpyCoos
 
 - type: emoteSounds
   id: MaleVulpkanin
@@ -92,10 +90,6 @@
       collection: VulpkaninScreams
     Laugh:
       collection: MaleLaugh
-    Gekker: #Floof
-      collection: VulpkaninGekker
-    Yap: #Floof
-      collection: VulpkaninYap
     Sneeze:
       collection: MaleSneezes
     Cough:
@@ -134,10 +128,6 @@
       collection: VulpkaninScreams
     Laugh:
       collection: FemaleLaugh
-    Gekker: #Floof
-      collection: VulpkaninGekker
-    Yap: #Floof
-      collection: VulpkaninYap
     Sneeze:
       collection: FemaleSneezes
     Cough:
@@ -172,8 +162,6 @@
   params:
     variation: 0.125
   sounds:
-    Scream:
-      collection: RodentiaScreams # Floof
     Laugh:
       collection: MaleLaugh
     Sneeze:
@@ -202,8 +190,6 @@
   params:
     variation: 0.125
   sounds:
-    Scream:
-      collection: RodentiaScreams # Floof
     Laugh:
       collection: FemaleLaugh
     Sneeze:
@@ -246,8 +232,6 @@
       collection: FemaleCry
     Hiss: # Delta-V - M3739 - Not too sure how this wasn't retained in the port. Did we begin the process before it merged?
       path: /Audio/Animals/snake_hiss.ogg
-    Weh: # Floof - M3739 - the wehpocalypse claims the ants
-      collection: Weh
 
 - type: emoteSounds
   id: MaleFeroxi
@@ -342,16 +326,6 @@
       collection: KitsuneSqueal
     Growl:
       collection: KitsuneGrowl
-    Whine: #Floof - M3739 - #937 - TODO: Give them a unique whine.
-      collection: VulpkaninWhines
-    Gekker: #Floof - M3739 - #937 - Foxes do be laughin' a lot.
-      collection: VulpkaninGekker
-    Yap: #Floof - M3739 - #937 - Foxes do be yappin a lot.
-      collection: VulpkaninYap
-#    Gasp: | Floof - M3739 - #937 - We do not have these... yet.
-#      collection: MaleGasp
-#    DefaultDeathgasp:
-#      collection: MaleDeathGasp
 
 - type: emoteSounds
   id: FemaleKitsune
@@ -384,13 +358,3 @@
       collection: KitsuneSqueal
     Growl:
       collection: KitsuneGrowl
-    Whine: #Floof - M3739 - #937 - TODO: Give them a unique whine.
-      collection: VulpkaninWhines
-    Gekker: #Floof - M3739 - #937 - Foxes do be laughin' a lot.
-      collection: VulpkaninGekker
-    Yap: #Floof - M3739 - #937 - Foxes do be yappin a lot.
-      collection: VulpkaninYap
-#    Gasp: | Floof - M3739 - #937 - We do not have these... yet.
-#      collection: FemaleGasp
-#    DefaultDeathgasp:
-#      collection: FemaleDeathGasp

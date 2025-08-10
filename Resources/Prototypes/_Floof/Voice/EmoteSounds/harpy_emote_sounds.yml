@@ -1,0 +1,80 @@
+- type: emoteSounds
+  id: FloofUnisexHarpy
+  sounds:
+  Scream:
+    Scream:
+      collection: HarpyScreams
+    Laugh:
+      collection: HarpyLaugh
+    Crying:
+      collection: HarpyCry
+    Hiss:
+      collection: HarpyHisses
+    Meow:
+      collection: HarpyMeows
+    Mew:
+      collection: HarpyMews
+    Growl:
+      collection: HarpyGrowls
+    Purr:
+      collection: HarpyPurrs
+    HarpyRing:
+      collection: HarpyRings
+    Honk:
+      collection: HarpyHonks
+    HarpyPew:
+      collection: HarpyPews
+    HarpyBang:
+      collection: HarpyBangs
+    Beep:
+      collection: HarpyBeeps
+    Boop:
+      path: /Audio/Voice/IPC/beep_500.ogg
+    HarpyRev:
+      collection: HarpyRevs
+    Chime:
+      path: /Audio/Machines/chime.ogg
+    Buzz:
+      path: /Audio/Machines/buzz-sigh.ogg
+    Buzz-Two:
+      path: /Audio/Machines/buzz-two.ogg
+    Ping:
+      path: /Audio/Effects/Cargo/ping.ogg
+    Whirr:
+      collection: IPCWhirrs
+    Click:
+      collection: HarpyClicks
+    Chitter:
+      collection: HarpyChitter
+    Squeak:
+      collection: HarpySqueak
+    HarpyCaw:
+      collection: HarpyCaws
+    Chirp:
+      collection: HarpyChirps
+    Snarl:
+      collection: VulpkaninSnarls
+    Bark:
+      collection: VulpkaninBarks
+    Whine:
+      collection: VulpkaninWhines
+    Howl:
+      collection: VulpkaninHowls
+    Weh:
+      collection: Weh
+    Mars:
+      collection: Mars
+    Wurble:
+      collection: Wurble
+    Gnash:
+      collection: FeroxiGnashes
+    Coo:
+      collection: HarpyCoos
+
+- type: emoteSounds
+  parent: [FloofBaseMaleSounds, FloofUnisexHarpy]
+  id: FloofMaleHarpy
+
+- type: emoteSounds
+  parent: [FloofBaseFemaleSounds, FloofUnisexHarpy]
+  id: FloofFemaleHarpy
