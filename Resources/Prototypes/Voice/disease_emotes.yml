@@ -14,13 +14,6 @@
     components:
     - Vocal
   blacklist:
-    tags:
-      - SiliconEmotes
-      - UnathiEmotes # Floof - M3739 - #631 - Lizards cannot cough. At all.
-      - DionaEmotes # Floof - M3739 - #631
-      - ArachnidEmotes # Floof - M3739 - #631
-      - MothEmotes # Floof - M3739 - #631
-      - ChitinidEmotes # Floof - M3739 - #726
     components:
     - BorgChassis
   chatTriggers:

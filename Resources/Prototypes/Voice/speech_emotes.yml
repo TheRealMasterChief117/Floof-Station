@@ -63,12 +63,6 @@
   whitelist:
     components:
     - Vocal
-  blacklist:
-    tags:
-      - DionaEmotes # Floof - M3739 - #631
-      - ArachnidEmotes # Floof - M3739 - #631
-      - MothEmotes # Floof - M3739 - #631
-      - ChitinidEmotes # Floof - M3739 - #726
   chatMessages: ["chat-emote-msg-whistle"]
   chatTriggers:
     - whistles
@@ -81,12 +75,6 @@
   whitelist:
     components:
     - Vocal
-  blacklist:
-    tags:
-      - DionaEmotes # Floof - M3739 - #631
-      - ArachnidEmotes # Floof - M3739 - #631
-      - MothEmotes # Floof - M3739 - #631
-      - ChitinidEmotes # Floof - M3739 - #726
   chatMessages: ["chat-emote-msg-crying"]
   chatTriggers:
     - cries
