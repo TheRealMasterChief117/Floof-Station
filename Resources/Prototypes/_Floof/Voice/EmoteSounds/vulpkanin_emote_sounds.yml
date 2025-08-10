@@ -1,0 +1,33 @@
+- type: emoteSounds
+  id: FloofUnisexVulpkanin
+  sounds:
+    Scream:
+      collection: VulpkaninScreams
+    Gekker:
+      collection: VulpkaninGekker
+    Yap:
+      collection: VulpkaninYap
+    Growl:
+      collection: VulpkaninGrowls
+    Snarl:
+      collection: VulpkaninSnarls
+    Bark:
+      collection: VulpkaninBarks
+    Whine:
+      collection: VulpkaninWhines
+    Howl:
+      collection: VulpkaninHowls
+
+- type: emoteSounds
+  parent: [FloofBaseMaleSounds, FloofUnisexVulpkanin]
+  id: FloofMaleVulpkanin
+  sounds:
+    Laugh:
+      collection: MaleLaugh
+
+- type: emoteSounds
+  parent: [FloofBaseFemaleSounds, FloofUnisexVulpkanin]
+  id: FloofFemaleVulpkanin
+  sounds:
+    Laugh:
+      collection: FemaleLaugh

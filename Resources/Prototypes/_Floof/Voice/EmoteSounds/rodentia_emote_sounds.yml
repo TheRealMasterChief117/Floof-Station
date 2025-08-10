@@ -1,0 +1,21 @@
+- type: emoteSounds
+  id: FloofUnisexRodentia
+  sounds:
+    Scream:
+      collection: RodentiaScreams
+    Squeak:
+      path: /Audio/Animals/mouse_squeak.ogg
+
+- type: emoteSounds
+  parent: [FloofBaseMaleSounds, FloofUnisexRodentia]
+  id: FloofMaleRodentia
+  sounds:
+    Laugh:
+      collection: MaleLaugh
+
+- type: emoteSounds
+  parent: [FloofBaseFemaleSounds, FloofUnisexRodentia]
+  id: FloofFemaleRodentia
+  sounds:
+    Laugh:
+      collection: FemaleLaugh

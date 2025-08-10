@@ -26,9 +26,9 @@
     allowedEmotes: ['Growl', 'Squeak']
   - type: Vocal
     sounds:
-      Male: MaleKitsune
-      Female: FemaleKitsune
-      Unsexed: MaleKitsune
+      Male: FloofMaleKitsune
+      Female: FloofFemaleKitsune
+      Unsexed: FloofUnisexKitsune
   - type: Carriable
   - type: TypingIndicator
     proto: kitsune

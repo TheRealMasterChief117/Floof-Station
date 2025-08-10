@@ -1,0 +1,17 @@
+- type: emoteSounds
+  parent: FloofBaseMaleSounds
+  id: FloofMaleHuman
+  sounds:
+    Scream:
+      collection: MaleScreams
+    Laugh:
+      collection: MaleLaugh
+
+- type: emoteSounds
+  parent: FloofBaseFemaleSounds
+  id: FloofFemaleHuman
+  sounds:
+    Scream:
+      collection: FemaleScreams
+    Laugh:
+      collection: FemaleLaugh

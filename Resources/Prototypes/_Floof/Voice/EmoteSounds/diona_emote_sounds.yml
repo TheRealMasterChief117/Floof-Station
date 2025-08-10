@@ -1,0 +1,7 @@
+- type: emoteSounds
+  parent: [FloofBaseMaleSounds, UnisexDiona]
+  id: FloofMaleDiona
+
+- type: emoteSounds
+  parent: [FloofBaseFemaleSounds, UnisexDiona]
+  id: FloofFemaleDiona

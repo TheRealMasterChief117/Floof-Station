@@ -45,9 +45,9 @@
   - type: ScentTracker
   - type: Vocal
     sounds:
-      Male: MaleVulpkanin
-      Female: FemaleVulpkanin
-      Unsexed: MaleVulpkanin
+      Male: FloofMaleVulpkanin
+      Female: FloofFemaleVulpkanin
+      Unsexed: FloofUnisexVulpkanin
   - type: MobThresholds
     thresholds:
       0: Alive

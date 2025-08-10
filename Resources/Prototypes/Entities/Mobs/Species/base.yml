@@ -216,9 +216,9 @@
   - type: DamageForceSay
   - type: Vocal
     sounds:
-      Male: MaleHuman
-      Female: FemaleHuman
-      Unsexed: MaleHuman
+      Male: FloofMaleHuman
+      Female: FloofFemaleHuman
+      Unsexed: FloofMaleHuman
   - type: Emoting
   - type: BodyEmotes
     soundsId: GeneralBodyEmotes

@@ -71,8 +71,8 @@
 
   - type: Vocal
     sounds:
-      Male: UnisexChitinid
-      Female: UnisexChitinid
+      Male: FloofMaleChitinid
+      Female: FloofFemaleChitind
       Unsexed: UnisexChitinid
 
   - type: Fixtures

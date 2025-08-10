@@ -49,8 +49,8 @@
   - type: MothAccent
   - type: Vocal
     sounds:
-      Male: UnisexMoth
-      Female: UnisexMoth
+      Male: FloofMaleMoth
+      Female: FloofFemaleMoth
       Unsexed: UnisexMoth
   - type: MovementSpeedModifier
     weightlessAcceleration: 2.5 # Move around more easily in space.

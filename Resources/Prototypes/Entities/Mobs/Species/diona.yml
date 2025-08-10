@@ -97,8 +97,8 @@
     speechVerb: Plant
   - type: Vocal
     sounds:
-      Male: UnisexDiona
-      Female: UnisexDiona
+      Male: FloofMaleDiona
+      Female: FloofFemaleDiona
       Unsexed: UnisexDiona
   - type: BodyEmotes
     soundsId: DionaBodyEmotes

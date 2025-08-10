@@ -1,0 +1,7 @@
+- type: emoteSounds
+  parent: [FloofBaseMaleSounds, UnisexArachnid]
+  id: FloofMaleArachnid
+
+- type: emoteSounds
+  parent: [FloofBaseFemaleSounds, UnisexArachnid]
+  id: FloofFemaleArachnid

@@ -79,8 +79,8 @@
     naturalLanguage: Arachnic # Floof: explicitly stated natural languages
   - type: Vocal
     sounds:
-      Male: UnisexArachnid
-      Female: UnisexArachnid
+      Male: FloofMaleArachnid
+      Female: FloofFemaleArachnid
       Unsexed: UnisexArachnid
   - type: TypingIndicator
     proto: spider

@@ -206,9 +206,9 @@
           Slash: 5
     - type: Vocal
       sounds:
-        Male: MaleShadowkin
-        Female: FemaleShadowkin
-        Unsexed: MaleShadowkin
+        Male: FloofMaleShadowkin
+        Female: FloofFemaleShadowkin
+        Unsexed: FloofUnisexShadowkin
     - type: TypingIndicator
       proto: alien
     - type: MovementSpeedModifier

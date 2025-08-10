@@ -100,9 +100,9 @@
     proto: rodentia
   - type: Vocal
     sounds:
-      Male: MaleRodentia
-      Female: FemaleRodentia
-      Unsexed: MaleRodentia
+      Male: FloofMaleRodentia
+      Female: FloofFemaleRodentia
+      Unsexed: FloofUnisexRodentia
   - type: Rummager
   - type: AlwaysTriggerMousetrap
   - type: PseudoItem

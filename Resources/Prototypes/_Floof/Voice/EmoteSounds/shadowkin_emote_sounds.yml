@@ -1,19 +1,35 @@
 - type: emoteSounds
-  id: FloofUnisexReptilian
+  id: FloofUnisexShadowkin
+  sounds:
+    Hiss:
+      collection: FelinidHisses
+    Meow:
+      collection: FelinidMeows
+    Mew:
+      collection: FelinidMews
+    Growl:
+      collection: FelinidGrowls
+    Purr:
+      collection: FelinidPurrs
+    Mars:
+      collection: Mars
+    Wurble:
+      collection: Wurble
+
+- type: emoteSounds
+  parent: [FloofBaseMaleSounds, FloofUnisexShadowkin]
+  id: FloofMaleShadowkin
   sounds:
     Scream:
-      path: /Audio/Voice/Reptilian/reptilian_scream.ogg
+      collection: SlimeMaleScreams
     Laugh:
-      path: /Audio/Animals/lizard_happy.ogg
-    Yip:
-      collection: Yip
-    Hiss:
-      collection: ReptilianHiss
+      collection: MaleLaugh
 
 - type: emoteSounds
-  parent: [FloofBaseMaleSounds, FloofUnisexReptilian]
-  id: FloofMaleReptilian
-
-- type: emoteSounds
-  parent: [FloofBaseFemaleSounds, FloofUnisexReptilian]
-  id: FloofFemaleReptilian
+  parent: [FloofBaseFemaleSounds, FloofUnisexShadowkin]
+  id: FloofFemaleShadowkin
+  sounds:
+    Scream:
+      collection: SlimeFemaleScreams
+    Laugh:
+      collection: FemaleLaugh

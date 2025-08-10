@@ -1,0 +1,29 @@
+- type: emoteSounds
+  id: FloofUnisexKitsune
+  sounds:
+    Scream:
+      collection: KitsuneScream
+    Squeak:
+      collection: KitsuneSqueal
+    Growl:
+      collection: KitsuneGrowl
+    Whine: #Floof - M3739 - #937 - TODO: Give them a unique whine.
+      collection: VulpkaninWhines
+    Gekker:
+      collection: VulpkaninGekker
+    Yap:
+      collection: VulpkaninYap
+
+- type: emoteSounds
+  parent: [FloofBaseMaleSounds, FloofUnisexKitsune]
+  id: FloofMaleKitsune
+  sounds:
+    Laugh:
+      collection: MaleLaugh
+
+- type: emoteSounds
+  parent: [FloofBaseFemaleSounds, FloofUnisexKitsune]
+  id: FloofFemaleKitsune
+  sounds:
+    Laugh:
+      collection: FemaleLaugh
