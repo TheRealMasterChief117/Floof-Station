@@ -187,7 +187,7 @@ namespace Content.Server.Forensics
             {
                 var cleanDelay = cleanForensicsEntity.Comp.CleanDelay;
 
-                if (HasComp<ScentComponent>(args.Target)) // Floof
+                if (HasComp<ScentComponent>(target)) // Floof
                     cleanDelay += 30;
 
                 var doAfterArgs = new DoAfterArgs(EntityManager, user, cleanDelay, new CleanForensicsDoAfterEvent(), cleanForensicsEntity, target: target, used: cleanForensicsEntity)
