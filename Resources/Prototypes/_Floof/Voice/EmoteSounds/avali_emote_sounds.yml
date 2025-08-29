@@ -12,11 +12,23 @@
       collection: AvaliScreams
     Chirp:
       collection: ResomiChirps
+    Whistle:
+      collection: Whistles
+    Weh:
+      collection: Weh
+    Coo:
+      collection: HarpyCoos
 
 - type: emoteSounds
   parent: [FloofBaseMaleSounds, UnisexAvali]
   id: MaleAvali
+  sounds:
+    Laugh:
+      collection: MaleLaugh
 
 - type: emoteSounds
   parent: [FloofBaseFemaleSounds, UnisexAvali]
   id: FemaleAvali
+  sounds:
+    Laugh:
+      collection: FemaleLaugh
