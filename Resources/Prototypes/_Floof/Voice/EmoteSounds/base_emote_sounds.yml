@@ -24,6 +24,8 @@
       collection: MaleCry
     Weh:
       collection: Weh
+    Coo:
+      collection: HarpyCoos
 
 - type: emoteSounds
   parent: FloofBaseHumanoidSounds
@@ -58,5 +60,3 @@
       collection: FemaleSigh
     Crying:
       collection: FemaleCry
-    DefaultDeathgasp:
-      collection: FemaleDeathGasp
