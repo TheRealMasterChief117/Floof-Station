@@ -181,10 +181,15 @@ namespace Content.Server.Forensics
 
             var totalPrintsAndFibers = forensicsComp.Fingerprints.Count + forensicsComp.Fibers.Count;
             var hasRemovableDNA = forensicsComp.DNAs.Count > 0 && forensicsComp.CanDnaBeCleaned;
+            var hasScent = forensicsComp.Scent != string.Empty; // Floof
 
-            if (hasRemovableDNA || totalPrintsAndFibers > 0)
+            if (hasRemovableDNA || totalPrintsAndFibers > 0 || hasScent)
             {
                 var cleanDelay = cleanForensicsEntity.Comp.CleanDelay;
+
+                if (HasComp<ScentComponent>(args.Target)) // Floof
+                    cleanDelay += 30;
+
                 var doAfterArgs = new DoAfterArgs(EntityManager, user, cleanDelay, new CleanForensicsDoAfterEvent(), cleanForensicsEntity, target: target, used: cleanForensicsEntity)
                 {
                     BreakOnHandChange = true,
