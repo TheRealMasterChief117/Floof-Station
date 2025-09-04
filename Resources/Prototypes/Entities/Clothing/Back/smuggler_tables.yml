@@ -53,7 +53,7 @@
     - id: SpaceCash100
       weight: 20
     - id: WhoopieCushion
-    - id: RubberChicken
+    # - id: RubberChicken floof not ported yet
     - id: PlasticBanana
       amount: !type:RangeNumberSelector
         range: 1, 5
@@ -421,7 +421,7 @@
       children:
       - id: SheetPlasma1
         weight: 2
-      - id: SheetPlasma10
+      # - id: SheetPlasma10 floof not ported yet
       - id: SheetPlasma
         weight: 0.50
     - !type:GroupSelector
@@ -634,9 +634,9 @@
     - id: DeviceQuantumSpinInverter
       amount: !type:ConstantNumberSelector
         value: 2
-    - id: SpectralLocator
-    - id: ArabianLamp
-      weight: 0.50
+    # - id: SpectralLocator floof not ported yet
+    #- id: ArabianLamp floof not ported yet
+       # weight: 0.50
     - id: ChameleonProjector
       weight: 0.25
 
