@@ -106,28 +106,28 @@
     children:
     - id: SpaceCash100
       weight: 20
-    - id: ChemistryBottleUnstableMutagen
+    - id: EpinephrineChemistryBottle # floof TODO ChemistryBottleEpinephrine
       amount: !type:RangeNumberSelector
         range: 1, 5
-    - id: ChemistryBottleLeft4Zed
+    - id: Left4ZedChemistryBottle # floof TODO ChemistryBottleLeft4Zed
       amount: !type:RangeNumberSelector
         range: 1, 5
-    - id: ChemistryBottleEZNutrient
+    - id: EZNutrientChemistryBottle # floof TODO ChemistryBottleEZNutrient
       amount: !type:RangeNumberSelector
         range: 1, 5
-    - id: ChemistryBottleRobustHarvest
+    - id: RobustHarvestChemistryBottle # floof TODO ChemistryBottleRobustHarvest
       amount: !type:RangeNumberSelector
         range: 1, 5
-    - id: ChemistryBottleEpinephrine
+    - id: EpinephrineChemistryBottle # floof TODO ChemistryBottleEpinephrine
       amount: !type:RangeNumberSelector
         range: 1, 5
-    - id: ChemistryBottleEphedrine
+    - id: EphedrineChemistryBottle # floof TODO ChemistryBottleEphedrine
       amount: !type:RangeNumberSelector
         range: 1, 5
-    - id: ChemistryBottleOmnizine
-    - id: ChemistryBottleCognizine
-    - id: ChemistryBottleToxin
-    - id: ChemistryBottleNocturine
+    - id: OmnizineChemistryBottle # floof TODO ChemistryBottleOmnizine
+    - id: CognizineChemistryBottle # floof TODO ChemistryBottleCognizine
+    - id: ToxinChemistryBottle # floof TODO ChemistryBottleToxin
+    - id: NocturineChemistryBottle # floof TODO ChemistryBottleNocturine
     - id: VestineChemistryVial
 
 - type: entityTable
