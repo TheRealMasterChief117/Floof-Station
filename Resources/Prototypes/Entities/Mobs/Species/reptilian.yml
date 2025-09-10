@@ -7,6 +7,10 @@
   components:
   - type: HumanoidAppearance
     species: Reptilian
+    hideLayersOnEquip:
+    - Snout
+    - HeadTop
+    - HeadSide
   - type: Hunger
   - type: Puller
     needsHands: false
@@ -23,14 +27,6 @@
     spawned:
     - id: FoodMeatLizard
       amount: 5
-  - type: Inventory
-    speciesId: reptilian
-    # femaleDisplacements: # Floof - displacements
-    #   jumpsuit:
-    #     sizeMaps:
-    #       32:
-    #         sprite: Mobs/Species/Human/displacement.rsi
-    #         state: jumpsuit-female
   - type: LizardAccent
   - type: Speech
     speechSounds: Lizard
@@ -90,6 +86,14 @@
     - FootstepSound
     - DoorBumpOpener
     - UnathiEmotes
+  - type: Inventory
+    speciesId: reptilian
+    # femaleDisplacements: # Floof - displacements
+    #   jumpsuit:
+    #     sizeMaps:
+    #       32:
+    #         sprite: Mobs/Species/Human/displacement.rsi
+    #         state: jumpsuit-female
 
 - type: entity
   parent: BaseSpeciesDummy
